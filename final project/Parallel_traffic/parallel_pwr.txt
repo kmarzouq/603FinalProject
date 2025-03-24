@@ -1,0 +1,99 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : Controller
+Version: V-2023.12-SP3
+Date   : Sun Mar 23 18:56:13 2025
+****************************************
+
+
+Library(s) Used:
+
+    gtech (File: /usr/synopsys/syn/V-2023.12-SP3/libraries/syn/gtech.db)
+
+
+Operating Conditions: ss0p95vn40c   Library: saed32rvt_ss0p95vn40c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+Controller             ForQA             saed32rvt_ss0p95vn40c
+*GEQ_UNS_OP_7_4_1      ForQA             saed32rvt_ss0p95vn40c
+DW01_cmp2_width7       ForQA             saed32rvt_ss0p95vn40c
+*ADD_UNS_OP_4_1_4      ForQA             saed32rvt_ss0p95vn40c
+DW01_inc_width4        ForQA             saed32rvt_ss0p95vn40c
+*ADD_UNS_OP_7_1_7      ForQA             saed32rvt_ss0p95vn40c
+DW01_inc_width7        ForQA             saed32rvt_ss0p95vn40c
+*GEQ_UNS_OP_7_6_1      ForQA             saed32rvt_ss0p95vn40c
+DW01_cmp2_width7       ForQA             saed32rvt_ss0p95vn40c
+DW01_inc_width4        ForQA             saed32rvt_ss0p95vn40c
+DW01_inc_width7        ForQA             saed32rvt_ss0p95vn40c
+DW01_cmp2_width7       ForQA             saed32rvt_ss0p95vn40c
+DW01_inc_width4        ForQA             saed32rvt_ss0p95vn40c
+DW01_inc_width7        ForQA             saed32rvt_ss0p95vn40c
+*GT_UNS_OP_7_4_1       ForQA             saed32rvt_ss0p95vn40c
+DW01_cmp2_width7       ForQA             saed32rvt_ss0p95vn40c
+DW01_inc_width4        ForQA             saed32rvt_ss0p95vn40c
+DW01_inc_width7        ForQA             saed32rvt_ss0p95vn40c
+DW01_cmp2_width7       ForQA             saed32rvt_ss0p95vn40c
+DW01_inc_width4        ForQA             saed32rvt_ss0p95vn40c
+DW01_inc_width7        ForQA             saed32rvt_ss0p95vn40c
+*GEQ_UNS_OP_7_2_1      ForQA             saed32rvt_ss0p95vn40c
+DW01_cmp2_width7       ForQA             saed32rvt_ss0p95vn40c
+*GT_UNS_OP_6_1_1       ForQA             saed32rvt_ss0p95vn40c
+DW01_cmp2_width6       ForQA             saed32rvt_ss0p95vn40c
+*SUB_UNS_OP_6_1_6      ForQA             saed32rvt_ss0p95vn40c
+DW01_dec_width6        ForQA             saed32rvt_ss0p95vn40c
+DW01_inc_width7        ForQA             saed32rvt_ss0p95vn40c
+DW01_cmp2_width7       ForQA             saed32rvt_ss0p95vn40c
+DW01_cmp2_width6       ForQA             saed32rvt_ss0p95vn40c
+DW01_dec_width6        ForQA             saed32rvt_ss0p95vn40c
+DW01_inc_width7        ForQA             saed32rvt_ss0p95vn40c
+*MULT_UNS_OP_4_1_4     ForQA             saed32rvt_ss0p95vn40c
+DW02_mult_A_width4_B_width1
+                       ForQA             saed32rvt_ss0p95vn40c
+DW02_mult_A_width4_B_width1
+                       ForQA             saed32rvt_ss0p95vn40c
+DW02_mult_A_width4_B_width1
+                       ForQA             saed32rvt_ss0p95vn40c
+DW02_mult_A_width4_B_width1
+                       ForQA             saed32rvt_ss0p95vn40c
+DW02_mult_A_width4_B_width1
+                       ForQA             saed32rvt_ss0p95vn40c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =   2.7596 uW  (100%)
+                         ---------
+Total Dynamic Power    =   2.7596 uW  (100%)
+
+Cell Leakage Power     =   0.0000 pW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.3239            0.0000            0.3239  (  11.74%)
+combinational      0.0000            2.4357            0.0000            2.4357  (  88.26%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW         2.7596 uW         0.0000 pW         2.7596 uW
